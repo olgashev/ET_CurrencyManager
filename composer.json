@@ -1,0 +1,26 @@
+{
+    "name": "etws/et_currencymanager",
+    "description": "ET Currency Manager extension for Magento 1.x",
+    "keywords": [
+        "magento",
+        "currency"
+    ],
+    "type": "magento-module",
+    "license": "EFL-1.0",
+    "authors":[
+        {
+            "name":"ET Web Solutions",
+            "email": "support@etwebsolutions.com",
+            "homepage": "http://www.etwebsolutions.com/"
+        }
+    ],
+    "support": {
+        "email": "support@etwebsolutions.com",
+        "issues": "https://bitbucket.org/etws/et_currencymanager/issues?status=new&status=open",
+        "source": "https://bitbucket.org/etws/et_currencymanager"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "3.*"
+    }
+}
