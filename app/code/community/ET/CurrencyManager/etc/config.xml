@@ -54,12 +54,11 @@
             <currencymanager>
                 <class>ET_CurrencyManager_Helper</class>
             </currencymanager>
-            <!--tax>
+            <tax>
                 <rewrite>
                     <data>ET_CurrencyManager_Helper_Tax</data>
                 </rewrite>
-            </tax-->
-
+            </tax>
         </helpers>
         <models>
             <directory>
@@ -120,11 +119,6 @@
                         <class>currencymanager/observer</class>
                         <method>fixCurrencySwitchUrl</method>
                     </fix_currency_switch_url>
-                    <rewrire_classes_depending_on_version>
-                        <type>model</type>
-                        <class>currencymanager/observer</class>
-                        <method>rewriteClasses</method>
-                    </rewrire_classes_depending_on_version>
                 </observers>
             </controller_front_init_before>
             <currency_options_after_get>
@@ -155,7 +149,6 @@
             </general>
             <additional>
                 <fix_currency_switch_url>0</fix_currency_switch_url>
-                <rewrite_classes>1</rewrite_classes>
             </additional>
         </currencymanager>
     </default>

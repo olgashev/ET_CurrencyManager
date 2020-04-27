@@ -35,21 +35,6 @@ class ET_CurrencyManager_Model_Observer
         }
     }
 
-    public function rewriteClasses(Varien_Event_Observer $observer)
-    {
-        $isRewriteEnabled = (int)Mage::getConfig()->getNode('default/currencymanager/additional/rewrite_classes');
-        if ($isRewriteEnabled) {
-            /** in CE version 1.8.1.0 tax functions declarations changed */
-            if (version_compare(Mage::getVersion(), '1.8.1', '>')) {
-                //Helper rewrite
-                Mage::getConfig()->setNode('global/helpers/tax/rewrite/data', 'ET_CurrencyManager_Helper_Tax1810');
-            } else {
-                //Helper rewrite
-                Mage::getConfig()->setNode('global/helpers/tax/rewrite/data', 'ET_CurrencyManager_Helper_Tax');
-            }
-        }
-    }
-
     /**
      * Remove html tags from currency symbol for PDF
      *
